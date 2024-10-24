@@ -32,15 +32,6 @@ end
 return instance
 end
 
-local function Corner(parent, props)
-local new = Create("UICorner", parent)
-new.CornerRadius = UDim.new(0, 4),
-if props then
-SetProps(new, props)
-end
-return new
-end
-
 local function Stroke(parent, props)
 local new = Create("UIStroke", parent)
 new.Color = CfgHub.Col_Stroke
@@ -301,7 +292,6 @@ end)
     local image = Configs.Image or ""
     local size = Configs.Size or {30, 30}
     local color = Configs.Color or CfgHub.Col_Hub
-    local corner = Configs.Corner or true
     local stroke = Configs.Stroke or false
     local strokecolor = Configs.StrokeColor or CfgHub.Col_Stroke
     
