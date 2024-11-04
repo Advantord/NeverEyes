@@ -82,7 +82,6 @@ end
 
 local Menu_Notifi = Create("Frame", ScreenGui, {
   Size = UDim2.new(0, 300, 1, 0),
-  Name = "NotificationMenu",
   BorderSizePixel = 0,
   Position = UDim2.new(1, 0, 0, 0),
   AnchorPoint = Vector2.new(1, 0),
@@ -110,7 +109,6 @@ function MakeNotifi(Configs)
     BackgroundTransparency = 1,
     BorderSizePixel = 0,
     AutomaticSize = "Y",
-    Name = "Title"
   })
   
   local Frame2 = Create("Frame", Frame1, {
@@ -204,7 +202,6 @@ local Anim_Title = Configs.Hub.Animation or "Never Eyes"
 local Menu = Create("Frame", ScreenGui, {
 BackgroundColor3 = CfgHub.Col_Hub,
 BorderSizePixel = 0,
-Name = "MainFrame",
 Position = UDim2.new(0.5, -250, 0.5, -120),
 Active = true,
 Draggable = true
@@ -212,7 +209,6 @@ Draggable = true
   
 local TopBar = Create("Frame", Menu, {
 BackgroundTransparency = 1,
-Name = "TopBar",
 BorderSizePixel = 0,
 Size = UDim2.new(1, 0, 0, 20),
 Visible = false
@@ -234,7 +230,6 @@ BackgroundTransparency = 1
 local Minimize_BTN = Create("TextButton", TopBar, {
 Text = "-",
 TextColor3 = CfgHub.Set_Col_Txt,
-Name = "Minimized",
 Size = UDim2.new(0, 20, 0, 20),
 Position = UDim2.new(1, -20, 0, 0),
 BackgroundTransparency = 1,
@@ -297,7 +292,6 @@ end)
   
   local line_Containers = Create("Frame", Menu, {
     BackgroundTransparency = 1,
-    Name = "LineContainer", 
     Size = UDim2.new(1, 0, 1, 0)
   })
   
@@ -360,7 +354,6 @@ end)
     Size = UDim2.new(1, -tonumber(ScrollBar.Size.X.Offset + 2), 1, -tonumber(TopBar.Size.Y.Offset + 2)),
     AnchorPoint = Vector2.new(1, 1),
     BorderSizePixel = 0,
-    Name = "Containers",
     Position = UDim2.new(1, 0, 1, 0),
     BackgroundTransparency = 1
   })
@@ -369,7 +362,6 @@ end)
     local line = Create("Frame", line_Containers, props)
     line.BackgroundColor3 = CfgHub.Col_LinesTwo
     line.BorderSizePixel = 0
-    line.Name = "Line"
   end
   
   Add_Line({Size = UDim2.new(1, 0, 0, 1),Position = UDim2.new(0, 0, 0, TopBar.Size.Y.Offset)})
@@ -399,13 +391,11 @@ end)
     
     local Frame = Create("Frame", ScrollBar, {
       Size = UDim2.new(1, 0, 0, 25),
-     Name = "Tabs",
       BackgroundTransparency = 1
     })
     
     local TextButton = Create("TextButton", Frame, {
       Size = UDim2.new(1, 0, 1, 0),
-      Name = "TxtBtnTab",
       BackgroundTransparency = 1,
       Text = ""
     })
@@ -414,7 +404,6 @@ end)
       Size = UDim2.new(1, 0, 1, 0),
       BackgroundTransparency = 1,
       Font = CfgHub.Txt_Font,
-     
       TextColor3 = textcolor,
       TextSize = textsize,
       Text = TabName
@@ -423,7 +412,6 @@ end)
     local Container = Create("ScrollingFrame", Containers, {
       Size = UDim2.new(1, 0, 1, 0),
       ScrollingDirection = "Y",
-      Name = "Pages",
       AutomaticCanvasSize = "Y",
       CanvasSize = UDim2.new(),
       BackgroundTransparency = 1,
@@ -473,7 +461,6 @@ end)
     local TextButton = Create("TextButton", parent, {
       Size = UDim2.new(1, 0, 0, 25),
       BackgroundColor3 = CfgHub.Col_Options,
-      Name = "Button",
       Text = "",
       AutoButtonColor = false
     })Stroke(TextButton,{
@@ -482,7 +469,6 @@ end)
     
     local TextLabel = Create("TextLabel", TextButton, {
       TextSize = 15,
-      Name = "NameBtn",
       TextColor3 = CfgHub.Set_Col_Txt,
       Text = ButtonName,
       Size = UDim2.new(1, 0, 1, 0),
@@ -517,7 +503,6 @@ end)
     local TextButton = Create("TextButton", parent, {
       Size = UDim2.new(1, 0, 0, 25),
       BackgroundColor3 = CfgHub.Col_Options,
-      Name = "Toggle",
       Text = "",
       AutoButtonColor = false
     })Stroke(TextButton,{
