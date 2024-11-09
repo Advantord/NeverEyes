@@ -462,7 +462,7 @@ end)
       Size = UDim2.new(1, 0, 0, 25),
       BackgroundColor3 = CfgHub.Col_Options,
       Text = "",
-Name = "Frame",
+      Name = "Frame",
       AutoButtonColor = false
     })Stroke(TextButton,{
     	Color = CfgHub.Col_All_Btn
@@ -505,6 +505,7 @@ Name = "Frame",
       Size = UDim2.new(1, 0, 0, 25),
       BackgroundColor3 = CfgHub.Col_Options,
       Text = "",
+      Name = "Frame",
       AutoButtonColor = false
     })Stroke(TextButton,{
 Color = Color3.fromRGB(18, 0, 53)
